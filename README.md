@@ -59,3 +59,31 @@ The videos can be accessed through the following link:
 ### Usage in This Project
 
 In this project, the videos are used to demonstrate and validate the effectiveness of the YOLO-based people counting system. Specific frames from these videos are processed to detect and count the number of people using the trained YOLO model. The results are then displayed in real-time as the video plays.
+
+## Setup for YOLOv3 Object Detection Model
+
+This repository includes a Python script designed to automate the preparation of the YOLOv3 object detection model by downloading the required configuration files and pre-trained weights. The script ensures that all necessary components are downloaded and stored locally, allowing for seamless integration with the main object detection application.
+
+### Dependencies
+
+- Python 3.x
+- `requests` library
+
+You can install the required `requests` library using pip:
+
+```bash
+pip install requests
+```
+
+### Downloaded Files
+
+- YOLOv3 Configuration: The config file (yolov3.cfg) contains model configuration settings essential for the object detection model.
+
+- YOLOv3 Weights: The weights file (yolov3.weights) includes pre-trained weights on the COCO dataset, enabling the model to detect 80 different object classes.
+
+### File Paths
+
+- Weights Path: yolov3.weights
+- Config Path: yolov3.cfg
+
+These files are downloaded and stored locally in the same directory as the script. Ensure these paths are correctly referenced in any subsequent scripts used for object detection.
