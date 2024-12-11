@@ -87,3 +87,13 @@ pip install requests
 - Config Path: yolov3.cfg
 
 These files are downloaded and stored locally in the same directory as the script. Ensure these paths are correctly referenced in any subsequent scripts used for object detection.
+
+## Results
+
+This image shows a frame from a video being processed by a YOLO object detection system, specifically configured to count people in a crowded setting. Each individual in the frame is enclosed within a green bounding box, which the system uses to identify and track people across the video. The upper-left corner displays a real-time count of the people detected, which in this case is "40". The grayscale tone of the video and the uniformity of the green boxes suggest a focus on clarity and simplicity, optimizing the visibility of the detection framework against the complex background of a busy environment.
+
+![Original Image](result.png) 
+
+## What we learnt from the project
+
+Throughout our YOLO object detection project, we implemented an end-to-end application to count people in video frames using the YOLO model. We faced challenges in configuring and setting up the environment with Python, OpenCV, and NumPy to ensure real-time processing and display of people counts. We sourced video data from YouTube, which provided a diverse and realistic set of scenarios for validating the effectiveness of the YOLO-based people counting system. Each video's different conditions—varying lengths, lighting, and crowd density—offered a robust testing ground. We ensured all dependencies and YOLO configurations, including pre-trained weights and config files, were correctly placed to facilitate seamless integration of the detection model. Our experiences taught us valuable lessons in managing real-time data processing and refining object detection techniques for practical applications.
